@@ -1,28 +1,13 @@
-### SATA硬盘接口引脚定义
-#### 数据接口（7针）定义：
-1 GND Ground    接地，一般和负极相连
-2 A Transmit    数据发送正极信号接口
-3 A- Transmit   数据发送负极信号接口
-4 GND Ground    接地，一般和负极相连
-5 B- Receive    数据接收负极信号接口
-6 B Receive     数据接收正极信号接口
-7 GND Ground    接地，一般和负极相连 
-![](/jklist.github.io/img/image.png)
+# Docker
+## Docker安装
+### 安装 yum-utils 工具
+'yum install yum-utils'
+### 要将阿里云的 Docker CE 镜像源添加到 CentOS 7 的 yum 配置中
+'yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo'
+### 要在 CentOS 7 中安装 Docker CE
+'yum install -y docker-ce'
+### 启动 Docker 服务
+'systemctl start docker'
+### 系统启动时自动启动 Docker 服务
+'systemctl enable docker'
 
-
-#### 电源接口（15针）
-1 +3.3VDC 橙色 直流 3.3V 正极电源针脚
-2 +3.3VDC 橙色 直流 3.3V 正极电源针脚
-3 +3.3VDC 橙色 直流 3.3V 正极电源针脚,预充电,与第二路配对
-4 GND 黑色 接地，一般和负极相连,与第 1 路配对
-5 GND 黑色 接地，一般和负极相连,与第 2 路配对
-6 GND 黑色 接地，一般和负极相连,与第 3 路配对
-7 +5VDC 红色 直流 5V 正极电源针脚,预充电,与第二路配对
-8 +5VDC 红色 直流 5V 正极电源针脚
-9 +5VDC 红色 直流 5V 正极电源针脚
-10  GND  黑色 接地，一般和负极相连,与第 2 路配对
-11  Optional  黑色 保留的针脚
-12  GND  黑色 接地，一般和负极相连,与第 1 路配对
-13  +12VDC  黄色 直流 12V 正极电源针脚,预充电,与第二路配对
-14  +12VDC  黄色 直流 12V 正极电源针脚
-15  +12VDC  黄色 直流 12V 正极电源针脚
