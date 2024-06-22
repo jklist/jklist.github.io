@@ -1,5 +1,8 @@
 # JK的附件表
-!(../img/Docker/png)
+<div style="text-align:center;">
+    <img width="256" src="./img/Docker.png" alt="Docker Image">
+</div>
+
 ### Docker安装
 #### 安装 yum-utils 工具
 ```
